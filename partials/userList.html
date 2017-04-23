@@ -1,0 +1,41 @@
+<div class="container">
+
+<h2>Lista de Usuarios</h2>
+
+    <table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Alias</th>
+            <th>Edad</th>
+            <th>Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr id="resultsTable" ng-repeat="result in results | orderBy: '-timestamp'">
+            <!--Nombre-->
+            <td>
+                <span>{{result.name}}</span>
+            </td>
+            <!--Apellido-->
+            <td>
+                <span>{{result.surname}}</span>
+            </td>
+            <!--Alias-->
+            <td>
+                <span>{{result.alias}}</span>
+            </td>
+            <!--Edad-->
+            <td>
+                <span>{{result.age}}</span>
+            </td>
+            <!--Telefono-->
+            <td>
+                <span>{{result.phone}}</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
