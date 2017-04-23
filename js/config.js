@@ -1,12 +1,7 @@
 "use strict";
-
-/**
- * Config module which defines Firebase URL.
- * @module myApp/config
- */
 var app = angular.module("myApp.config", []);
 
-// your Firebase URL goes here
+
 var config = {
     apiKey: "AIzaSyBNuvvUkC2a9dA-rNIXNQySMuQbzo73efY",
     authDomain: "webservices-5dab5.firebaseapp.com",
